@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      list: [],
+      list: ["Sacar la ropa", "Hacer la cama", "Leer un rato" ],
       valorTarea: ""
     }
   }
@@ -42,7 +42,8 @@ class App extends Component {
       let lista = this.state.list;
       lista.push(this.state.valorTarea)
       this.setState({
-        valorLista: lista
+        valorLista: lista,
+        valorTarea: ""
       })
     }
   }
